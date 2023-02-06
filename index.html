@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="content">
+				<div class="ranges_wrapper">
+					<div class="range_wrapper">
+						<label for="storage"
+							>Storage: <span class="range_value">100</span></label
+						>
+						<input
+							type="range"
+							id="storage"
+							name="volume"
+							min="0"
+							max="1000"
+							value="300"
+						/>
+						<div class="ranges-labels"><span>0</span><span>1000</span></div>
+					</div>
+					<div class="range_wrapper">
+						<label for="transfer"
+							>Transfer: <span class="range_value">100</span></label
+						>
+						<input
+							type="range"
+							id="transfer"
+							name="volume"
+							min="0"
+							max="1000"
+							value="300"
+						/>
+						<div class="ranges-labels"><span>0</span><span>1000</span></div>
+					</div>
+				</div>
+				<div class="charts_wrapper">
+					<div class="chart_wrapper" id="backblaze">
+						<div class="chart_desc">
+							<div class="title_wrapper">
+								<span>backblaze</span>
+							</div>
+							<div class="icon"></div>
+						</div>
+						<div class="chart">
+							<span><label class="price"></label></span>
+						</div>
+					</div>
+					<div class="chart_wrapper" id="bunny">
+						<div class="chart_desc">
+							<div class="title_wrapper">
+								<span>bunny</span>
+								<div class="chart_variables">
+									<div class="variable_wrapper">
+										<input type="radio" name="bunny" value="hdd" checked />
+										<div class="radio_decor"></div>
+										<span>hdd</span>
+									</div>
+									<div class="variable_wrapper">
+										<input type="radio" name="bunny" value="ssd" />
+										<div class="radio_decor"></div>
+										<span>ssd</span>
+									</div>
+								</div>
+							</div>
+							<div class="icon"></div>
+						</div>
+						<div class="chart">
+							<span><label class="price"></label></span>
+						</div>
+					</div>
+					<div class="chart_wrapper" id="scaleway">
+						<div class="chart_desc">
+							<div class="title_wrapper">
+								<span>scaleway</span>
+								<div class="chart_variables">
+									<div class="variable_wrapper">
+										<input type="radio" name="scaleway" value="multi" checked />
+										<div class="radio_decor"></div>
+										<span>multi</span>
+									</div>
+									<div class="variable_wrapper">
+										<input type="radio" name="scaleway" value="single" />
+										<div class="radio_decor"></div>
+										<span>single</span>
+									</div>
+								</div>
+							</div>
+							<div class="icon"></div>
+						</div>
+						<div class="chart">
+							<span><label class="price"></label></span>
+						</div>
+					</div>
+					<div class="chart_wrapper" id="vultr">
+						<div class="chart_desc">
+							<div class="title_wrapper">
+								<span>vultr</span>
+							</div>
+							<div class="icon"></div>
+						</div>
+						<div class="chart">
+							<span><label class="price"></label></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="script.js"></script>
+</html>
